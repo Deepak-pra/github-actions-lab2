@@ -7,11 +7,12 @@ jobs:
     runs-on: '${{ matrix.os }}'
     strategy:
       matrix:
-          OS: [ubuntu-latest, macos-14, windows-latest]
+          OS: [ubuntu-latest, macos-14, windows-latest ]
+          py-version: [ "3.10", "3.11", "3.12" ]   
     steps:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '${{ matrix.version }}'
-        version: [ 3.10,3.11,3.12 ]
+        
         
