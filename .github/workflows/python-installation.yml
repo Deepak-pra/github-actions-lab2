@@ -3,7 +3,7 @@ name: Installing Python
 on: push
 
 jobs:
-  python-install:
+  py-install:
     runs-on: '${{ matrix.os }}'
       strategy:
         matrix:
